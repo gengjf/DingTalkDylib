@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB0206061E18DA0B00D79DC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0206051E18DA0B00D79DC2 /* Foundation.framework */; };
+		EB0206081E18DA0B00D79DC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0206071E18DA0B00D79DC2 /* UIKit.framework */; };
+		EB0206121E18DA0B00D79DC2 /* DingTalkDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */; };
+		EB0206141E18DA0B00D79DC2 /* DingTalkDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */; };
+		EB0206201E18DA7700D79DC2 /* DTGPSHook.h in Headers */ = {isa = PBXBuildFile; fileRef = EB02061E1E18DA7700D79DC2 /* DTGPSHook.h */; };
+		EB0206211E18DA7700D79DC2 /* DTGPSHook.m in Sources */ = {isa = PBXBuildFile; fileRef = EB02061F1E18DA7700D79DC2 /* DTGPSHook.m */; };
+		EB0206281E18E64F00D79DC2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0206271E18E64F00D79DC2 /* CoreLocation.framework */; };
+		EB2BEA0E1E1A0CDD00377579 /* JF_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2BEA0C1E1A0CDD00377579 /* JF_Helper.h */; };
+		EB2BEA0F1E1A0CDD00377579 /* JF_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEA0D1E1A0CDD00377579 /* JF_Helper.m */; };
+		EB2BEA111E1A0E1E00377579 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2BEA101E1A0E1E00377579 /* CoreGraphics.framework */; };
+		EB3A98CE1E1CBD8D00FD269A /* CLLocationManager+Util.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3A98CC1E1CBD8D00FD269A /* CLLocationManager+Util.h */; };
+		EB3A98CF1E1CBD8D00FD269A /* CLLocationManager+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A98CD1E1CBD8D00FD269A /* CLLocationManager+Util.m */; };
+		EB3A98D31E1CBDE700FD269A /* DTGPSSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3A98D11E1CBDE700FD269A /* DTGPSSettingViewController.h */; };
+		EB3A98D41E1CBDE700FD269A /* DTGPSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A98D21E1CBDE700FD269A /* DTGPSSettingViewController.m */; };
+		EB3A98DD1E1CC53800FD269A /* DTGPSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3A98DB1E1CC53800FD269A /* DTGPSButton.h */; };
+		EB3A98DE1E1CC53800FD269A /* DTGPSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A98DC1E1CC53800FD269A /* DTGPSButton.m */; };
+		EB3A98E01E1CC82200FD269A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A98DF1E1CC82200FD269A /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB0206021E18DA0B00D79DC2 /* libDingTalkDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDingTalkDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0206051E18DA0B00D79DC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB0206071E18DA0B00D79DC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB02060C1E18DA0B00D79DC2 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		EB02060D1E18DA0B00D79DC2 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		EB02060F1E18DA0B00D79DC2 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		EB0206101E18DA0B00D79DC2 /* DingTalkDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DingTalkDylib-Prefix.pch"; sourceTree = "<group>"; };
+		EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingTalkDylib.h; sourceTree = "<group>"; };
+		EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingTalkDylib.m; sourceTree = "<group>"; };
+		EB0206171E18DA0B00D79DC2 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+		EB02061E1E18DA7700D79DC2 /* DTGPSHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSHook.h; sourceTree = "<group>"; };
+		EB02061F1E18DA7700D79DC2 /* DTGPSHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSHook.m; sourceTree = "<group>"; };
+		EB0206271E18E64F00D79DC2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EB2BEA0C1E1A0CDD00377579 /* JF_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JF_Helper.h; sourceTree = "<group>"; };
+		EB2BEA0D1E1A0CDD00377579 /* JF_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JF_Helper.m; sourceTree = "<group>"; };
+		EB2BEA101E1A0E1E00377579 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB3A98CC1E1CBD8D00FD269A /* CLLocationManager+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+Util.h"; sourceTree = "<group>"; };
+		EB3A98CD1E1CBD8D00FD269A /* CLLocationManager+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+Util.m"; sourceTree = "<group>"; };
+		EB3A98D11E1CBDE700FD269A /* DTGPSSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSSettingViewController.h; sourceTree = "<group>"; };
+		EB3A98D21E1CBDE700FD269A /* DTGPSSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSSettingViewController.m; sourceTree = "<group>"; };
+		EB3A98DB1E1CC53800FD269A /* DTGPSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSButton.h; sourceTree = "<group>"; };
+		EB3A98DC1E1CC53800FD269A /* DTGPSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSButton.m; sourceTree = "<group>"; };
+		EB3A98DF1E1CC82200FD269A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB0205FE1E18DA0B00D79DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3A98E01E1CC82200FD269A /* MapKit.framework in Frameworks */,
+				EB2BEA111E1A0E1E00377579 /* CoreGraphics.framework in Frameworks */,
+				EB0206281E18E64F00D79DC2 /* CoreLocation.framework in Frameworks */,
+				EB0206061E18DA0B00D79DC2 /* Foundation.framework in Frameworks */,
+				EB0206081E18DA0B00D79DC2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB0205F81E18DA0B00D79DC2 = {
+			isa = PBXGroup;
+			children = (
+				EB0206091E18DA0B00D79DC2 /* DingTalkDylib */,
+				EB0206041E18DA0B00D79DC2 /* Frameworks */,
+				EB0206031E18DA0B00D79DC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB0206031E18DA0B00D79DC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB0206021E18DA0B00D79DC2 /* libDingTalkDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB0206041E18DA0B00D79DC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A98DF1E1CC82200FD269A /* MapKit.framework */,
+				EB2BEA101E1A0E1E00377579 /* CoreGraphics.framework */,
+				EB0206271E18E64F00D79DC2 /* CoreLocation.framework */,
+				EB0206051E18DA0B00D79DC2 /* Foundation.framework */,
+				EB0206071E18DA0B00D79DC2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB0206091E18DA0B00D79DC2 /* DingTalkDylib */ = {
+			isa = PBXGroup;
+			children = (
+				EB0206221E18DABF00D79DC2 /* Util */,
+				EB02061D1E18DA3C00D79DC2 /* GPS */,
+				EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */,
+				EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */,
+				EB02060A1E18DA0B00D79DC2 /* Package */,
+				EB02060E1E18DA0B00D79DC2 /* Supporting Files */,
+			);
+			path = DingTalkDylib;
+			sourceTree = "<group>";
+		};
+		EB02060A1E18DA0B00D79DC2 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				EB02060B1E18DA0B00D79DC2 /* DEBIAN */,
+				EB0206151E18DA0B00D79DC2 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		EB02060B1E18DA0B00D79DC2 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				EB02060C1E18DA0B00D79DC2 /* control.txt */,
+				EB02060D1E18DA0B00D79DC2 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		EB02060E1E18DA0B00D79DC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB02060F1E18DA0B00D79DC2 /* PackageVersion.plist */,
+				EB0206101E18DA0B00D79DC2 /* DingTalkDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB0206151E18DA0B00D79DC2 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				EB0206161E18DA0B00D79DC2 /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		EB0206161E18DA0B00D79DC2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				EB0206171E18DA0B00D79DC2 /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		EB02061D1E18DA3C00D79DC2 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A98D01E1CBDA900FD269A /* GPSSetting */,
+				EB3A98CB1E1CBD8D00FD269A /* CLLocationManager+Util */,
+				EB02061E1E18DA7700D79DC2 /* DTGPSHook.h */,
+				EB02061F1E18DA7700D79DC2 /* DTGPSHook.m */,
+			);
+			path = GPS;
+			sourceTree = "<group>";
+		};
+		EB0206221E18DABF00D79DC2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EB2BEA0B1E1A0CDD00377579 /* JF_Helper */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EB2BEA0B1E1A0CDD00377579 /* JF_Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EB2BEA0C1E1A0CDD00377579 /* JF_Helper.h */,
+				EB2BEA0D1E1A0CDD00377579 /* JF_Helper.m */,
+			);
+			path = JF_Helper;
+			sourceTree = "<group>";
+		};
+		EB3A98CB1E1CBD8D00FD269A /* CLLocationManager+Util */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A98CC1E1CBD8D00FD269A /* CLLocationManager+Util.h */,
+				EB3A98CD1E1CBD8D00FD269A /* CLLocationManager+Util.m */,
+			);
+			path = "CLLocationManager+Util";
+			sourceTree = "<group>";
+		};
+		EB3A98D01E1CBDA900FD269A /* GPSSetting */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A98DA1E1CC51E00FD269A /* DTGPSButton */,
+				EB3A98D11E1CBDE700FD269A /* DTGPSSettingViewController.h */,
+				EB3A98D21E1CBDE700FD269A /* DTGPSSettingViewController.m */,
+			);
+			path = GPSSetting;
+			sourceTree = "<group>";
+		};
+		EB3A98DA1E1CC51E00FD269A /* DTGPSButton */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A98DB1E1CC53800FD269A /* DTGPSButton.h */,
+				EB3A98DC1E1CC53800FD269A /* DTGPSButton.m */,
+			);
+			path = DTGPSButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB0205FF1E18DA0B00D79DC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2BEA0E1E1A0CDD00377579 /* JF_Helper.h in Headers */,
+				EB3A98DD1E1CC53800FD269A /* DTGPSButton.h in Headers */,
+				EB3A98D31E1CBDE700FD269A /* DTGPSSettingViewController.h in Headers */,
+				EB0206201E18DA7700D79DC2 /* DTGPSHook.h in Headers */,
+				EB3A98CE1E1CBD8D00FD269A /* CLLocationManager+Util.h in Headers */,
+				EB0206121E18DA0B00D79DC2 /* DingTalkDylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB0206011E18DA0B00D79DC2 /* DingTalkDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB02061A1E18DA0B00D79DC2 /* Build configuration list for PBXNativeTarget "DingTalkDylib" */;
+			buildPhases = (
+				EB0205FD1E18DA0B00D79DC2 /* Sources */,
+				EB0205FE1E18DA0B00D79DC2 /* Frameworks */,
+				EB0205FF1E18DA0B00D79DC2 /* Headers */,
+				EB0206001E18DA0B00D79DC2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DingTalkDylib;
+			productName = DingTalkDylib;
+			productReference = EB0206021E18DA0B00D79DC2 /* libDingTalkDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB0205F91E18DA0B00D79DC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					EB0206011E18DA0B00D79DC2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 52C773W3RU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EB0205FC1E18DA0B00D79DC2 /* Build configuration list for PBXProject "DingTalkDylib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB0205F81E18DA0B00D79DC2;
+			productRefGroup = EB0206031E18DA0B00D79DC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB0206011E18DA0B00D79DC2 /* DingTalkDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB0206001E18DA0B00D79DC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB0205FD1E18DA0B00D79DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2BEA0F1E1A0CDD00377579 /* JF_Helper.m in Sources */,
+				EB3A98D41E1CBDE700FD269A /* DTGPSSettingViewController.m in Sources */,
+				EB3A98DE1E1CC53800FD269A /* DTGPSButton.m in Sources */,
+				EB0206141E18DA0B00D79DC2 /* DingTalkDylib.m in Sources */,
+				EB0206211E18DA7700D79DC2 /* DTGPSHook.m in Sources */,
+				EB3A98CF1E1CBD8D00FD269A /* CLLocationManager+Util.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EB0206181E18DA0B00D79DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		EB0206191E18DA0B00D79DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		EB02061B1E18DA0B00D79DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 52C773W3RU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingTalkDylib/DingTalkDylib-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		EB02061C1E18DA0B00D79DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 52C773W3RU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingTalkDylib/DingTalkDylib-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB0205FC1E18DA0B00D79DC2 /* Build configuration list for PBXProject "DingTalkDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0206181E18DA0B00D79DC2 /* Debug */,
+				EB0206191E18DA0B00D79DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB02061A1E18DA0B00D79DC2 /* Build configuration list for PBXNativeTarget "DingTalkDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB02061B1E18DA0B00D79DC2 /* Debug */,
+				EB02061C1E18DA0B00D79DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB0205F91E18DA0B00D79DC2 /* Project object */;
+}

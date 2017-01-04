@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "65738B0E72DB7A2428DBE825B62AC30F97D640B3+++0D8BA14",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "65738B0E72DB7A2428DBE825B62AC30F97D640B3+++2252BC6" : 9223372036854775807,
+    "65738B0E72DB7A2428DBE825B62AC30F97D640B3+++0D8BA14" : 9223372036854775807,
+    "65738B0E72DB7A2428DBE825B62AC30F97D640B3+++DB74856" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A713F408-3754-4E33-A4D3-6F72B2950510",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "65738B0E72DB7A2428DBE825B62AC30F97D640B3+++2252BC6" : "DingTalkDylib\/DingTalkDylib\/DingTalkDylib\/",
+    "65738B0E72DB7A2428DBE825B62AC30F97D640B3+++0D8BA14" : "DingTalkDylib\/",
+    "65738B0E72DB7A2428DBE825B62AC30F97D640B3+++DB74856" : "DingTalkDylib\/DingTalkDylib\/DingTalkDylib\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DingTalkDylib",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DingTalkDylib\/DingTalkDylib.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gengjf\/DingTalkDylib.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "65738B0E72DB7A2428DBE825B62AC30F97D640B3+++0D8BA14"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gengjf\/DingTalkDylib.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "65738B0E72DB7A2428DBE825B62AC30F97D640B3+++2252BC6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gengjf\/DingTalkDylib.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "65738B0E72DB7A2428DBE825B62AC30F97D640B3+++DB74856"
+    }
+  ]
+}
