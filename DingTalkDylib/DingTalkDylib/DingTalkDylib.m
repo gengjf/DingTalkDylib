@@ -10,6 +10,9 @@
 #import "DTGPSHook.h"
 #import "DTGPSButton.h"
 
+// 签名证书的bundleIdentifier
+static NSString *JFbundleIdentifier = @"";
+
 @interface NSObject (DingTalkDylib)
 
 - (BOOL)jf_application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions;
@@ -48,7 +51,14 @@
 
 - (NSString *)jf_bundleIdentifier {
     
-    return @"com.laiwang.DingTalk";
+    NSString *bundleIdentifier = [self jf_bundleIdentifier];
+    
+    if(bundleIdentifier && [bundleIdentifier isEqualToString:JFbundleIdentifier]) {
+        
+        bundleIdentifier = @"com.laiwang.DingTalk";
+    }
+    
+    return bundleIdentifier;
 }
 
 @end

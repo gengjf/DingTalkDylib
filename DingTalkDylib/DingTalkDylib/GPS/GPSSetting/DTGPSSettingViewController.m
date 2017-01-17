@@ -34,8 +34,6 @@
     [self makeSubViews];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel:)];
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(commit:)];
 }
 
 - (void)makeSubViews {
@@ -89,32 +87,13 @@
     }
 }
 
-- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation{
-    
-    static NSString *annotationIdentifier = @"AnnotationIdentifier";
-    MKPinAnnotationView *customPinView = (MKPinAnnotationView *)[theMapView dequeueReusableAnnotationViewWithIdentifier:annotationIdentifier];
-    
-    if (!customPinView) {
-        
-        customPinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationIdentifier];
-        
-        customPinView.pinColor = MKPinAnnotationColorRed;//设置大头针的颜色
-        customPinView.animatesDrop = YES;
-        customPinView.canShowCallout = YES;
-        customPinView.draggable = YES;//可以拖动
-    }
-    else{
-        
-        customPinView.annotation = annotation;
-    }
-    return customPinView;
-}
-
 #pragma mark - 长安新增坐标点
 
 - (void)longPress:(UIGestureRecognizer*)gestureRecognizer {
     
     if (gestureRecognizer.state == UIGestureRecognizerStateBegan){
+        
+        [self.mapView removeAnnotations:self.mapView.annotations];
         
         //坐标转换
         CGPoint touchPoint = [gestureRecognizer locationInView:_mapView];
@@ -132,6 +111,8 @@
         pointAnnotation.title = title;
         
         [self.mapView addAnnotation:pointAnnotation];
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(commit:)];
     }
 }
 
