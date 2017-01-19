@@ -9,15 +9,8 @@
 #import "JF_Helper.h"
 #import "DTGPSHook.h"
 #import "DTGPSButton.h"
-
-// 签名证书的bundleIdentifier
-static NSString *JFbundleIdentifier = @"";
-
-@interface NSObject (DingTalkDylib)
-
-- (BOOL)jf_application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions;
-
-@end
+#import "UIApplication+JFUtil.h"
+#import "NSBundle+JFUtil.h"
 
 @implementation  NSObject (DingTalkDylib)
 
@@ -49,26 +42,13 @@ static NSString *JFbundleIdentifier = @"";
     return bRe;
 }
 
-- (NSString *)jf_bundleIdentifier {
-    
-    NSString *bundleIdentifier = [self jf_bundleIdentifier];
-    
-    if(bundleIdentifier && [bundleIdentifier isEqualToString:JFbundleIdentifier]) {
-        
-        bundleIdentifier = @"com.laiwang.DingTalk";
-    }
-    
-    return bundleIdentifier;
-}
-
 @end
 
 @implementation DingTalkDylib
 
 + (void)load {
     
-    Class appDelegate = NSClassFromString(@"DTAppDelegate");
-    [JF_Helper JFHookMethod:appDelegate oldSEL:@selector(application:didFinishLaunchingWithOptions:) newClass:appDelegate newSel:@selector(jf_application:didFinishLaunchingWithOptions:)];
+    [JF_Helper JFHookMethod:[UIApplication class] oldSEL:@selector(setDelegate:) newClass:[UIApplication class] newSel:@selector(jf_setDelegate:)];
 }
 
 @end

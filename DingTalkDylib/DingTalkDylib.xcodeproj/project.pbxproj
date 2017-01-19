@@ -11,18 +11,22 @@
 		EB0206081E18DA0B00D79DC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0206071E18DA0B00D79DC2 /* UIKit.framework */; };
 		EB0206121E18DA0B00D79DC2 /* DingTalkDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */; };
 		EB0206141E18DA0B00D79DC2 /* DingTalkDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */; };
-		EB0206201E18DA7700D79DC2 /* DTGPSHook.h in Headers */ = {isa = PBXBuildFile; fileRef = EB02061E1E18DA7700D79DC2 /* DTGPSHook.h */; };
-		EB0206211E18DA7700D79DC2 /* DTGPSHook.m in Sources */ = {isa = PBXBuildFile; fileRef = EB02061F1E18DA7700D79DC2 /* DTGPSHook.m */; };
 		EB0206281E18E64F00D79DC2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0206271E18E64F00D79DC2 /* CoreLocation.framework */; };
+		EB0B1E821E305418007A15A7 /* CLLocationManager+Util.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E7A1E305418007A15A7 /* CLLocationManager+Util.h */; };
+		EB0B1E831E305418007A15A7 /* CLLocationManager+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E7B1E305418007A15A7 /* CLLocationManager+Util.m */; };
+		EB0B1E841E305418007A15A7 /* NSBundle+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E7D1E305418007A15A7 /* NSBundle+JFUtil.h */; };
+		EB0B1E851E305418007A15A7 /* NSBundle+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E7E1E305418007A15A7 /* NSBundle+JFUtil.m */; };
+		EB0B1E861E305418007A15A7 /* UIApplication+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E801E305418007A15A7 /* UIApplication+JFUtil.h */; };
+		EB0B1E871E305418007A15A7 /* UIApplication+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E811E305418007A15A7 /* UIApplication+JFUtil.m */; };
+		EB0B1E8C1E305420007A15A7 /* DTGPSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E8A1E305420007A15A7 /* DTGPSButton.h */; };
+		EB0B1E8D1E305420007A15A7 /* DTGPSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E8B1E305420007A15A7 /* DTGPSButton.m */; };
+		EB0B1E941E305426007A15A7 /* DTGPSHook.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E8F1E305426007A15A7 /* DTGPSHook.h */; };
+		EB0B1E951E305426007A15A7 /* DTGPSHook.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E901E305426007A15A7 /* DTGPSHook.m */; };
+		EB0B1E961E305426007A15A7 /* DTGPSSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E921E305426007A15A7 /* DTGPSSettingViewController.h */; };
+		EB0B1E971E305426007A15A7 /* DTGPSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E931E305426007A15A7 /* DTGPSSettingViewController.m */; };
 		EB2BEA0E1E1A0CDD00377579 /* JF_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2BEA0C1E1A0CDD00377579 /* JF_Helper.h */; };
 		EB2BEA0F1E1A0CDD00377579 /* JF_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEA0D1E1A0CDD00377579 /* JF_Helper.m */; };
 		EB2BEA111E1A0E1E00377579 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2BEA101E1A0E1E00377579 /* CoreGraphics.framework */; };
-		EB3A98CE1E1CBD8D00FD269A /* CLLocationManager+Util.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3A98CC1E1CBD8D00FD269A /* CLLocationManager+Util.h */; };
-		EB3A98CF1E1CBD8D00FD269A /* CLLocationManager+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A98CD1E1CBD8D00FD269A /* CLLocationManager+Util.m */; };
-		EB3A98D31E1CBDE700FD269A /* DTGPSSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3A98D11E1CBDE700FD269A /* DTGPSSettingViewController.h */; };
-		EB3A98D41E1CBDE700FD269A /* DTGPSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A98D21E1CBDE700FD269A /* DTGPSSettingViewController.m */; };
-		EB3A98DD1E1CC53800FD269A /* DTGPSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3A98DB1E1CC53800FD269A /* DTGPSButton.h */; };
-		EB3A98DE1E1CC53800FD269A /* DTGPSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3A98DC1E1CC53800FD269A /* DTGPSButton.m */; };
 		EB3A98E01E1CC82200FD269A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A98DF1E1CC82200FD269A /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,18 +41,22 @@
 		EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingTalkDylib.h; sourceTree = "<group>"; };
 		EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingTalkDylib.m; sourceTree = "<group>"; };
 		EB0206171E18DA0B00D79DC2 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
-		EB02061E1E18DA7700D79DC2 /* DTGPSHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSHook.h; sourceTree = "<group>"; };
-		EB02061F1E18DA7700D79DC2 /* DTGPSHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSHook.m; sourceTree = "<group>"; };
 		EB0206271E18E64F00D79DC2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EB0B1E7A1E305418007A15A7 /* CLLocationManager+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+Util.h"; sourceTree = "<group>"; };
+		EB0B1E7B1E305418007A15A7 /* CLLocationManager+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+Util.m"; sourceTree = "<group>"; };
+		EB0B1E7D1E305418007A15A7 /* NSBundle+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+JFUtil.h"; sourceTree = "<group>"; };
+		EB0B1E7E1E305418007A15A7 /* NSBundle+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+JFUtil.m"; sourceTree = "<group>"; };
+		EB0B1E801E305418007A15A7 /* UIApplication+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JFUtil.h"; sourceTree = "<group>"; };
+		EB0B1E811E305418007A15A7 /* UIApplication+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JFUtil.m"; sourceTree = "<group>"; };
+		EB0B1E8A1E305420007A15A7 /* DTGPSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSButton.h; sourceTree = "<group>"; };
+		EB0B1E8B1E305420007A15A7 /* DTGPSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSButton.m; sourceTree = "<group>"; };
+		EB0B1E8F1E305426007A15A7 /* DTGPSHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSHook.h; sourceTree = "<group>"; };
+		EB0B1E901E305426007A15A7 /* DTGPSHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSHook.m; sourceTree = "<group>"; };
+		EB0B1E921E305426007A15A7 /* DTGPSSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSSettingViewController.h; sourceTree = "<group>"; };
+		EB0B1E931E305426007A15A7 /* DTGPSSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSSettingViewController.m; sourceTree = "<group>"; };
 		EB2BEA0C1E1A0CDD00377579 /* JF_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JF_Helper.h; sourceTree = "<group>"; };
 		EB2BEA0D1E1A0CDD00377579 /* JF_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JF_Helper.m; sourceTree = "<group>"; };
 		EB2BEA101E1A0E1E00377579 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EB3A98CC1E1CBD8D00FD269A /* CLLocationManager+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+Util.h"; sourceTree = "<group>"; };
-		EB3A98CD1E1CBD8D00FD269A /* CLLocationManager+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+Util.m"; sourceTree = "<group>"; };
-		EB3A98D11E1CBDE700FD269A /* DTGPSSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSSettingViewController.h; sourceTree = "<group>"; };
-		EB3A98D21E1CBDE700FD269A /* DTGPSSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSSettingViewController.m; sourceTree = "<group>"; };
-		EB3A98DB1E1CC53800FD269A /* DTGPSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSButton.h; sourceTree = "<group>"; };
-		EB3A98DC1E1CC53800FD269A /* DTGPSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSButton.m; sourceTree = "<group>"; };
 		EB3A98DF1E1CC82200FD269A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -100,8 +108,10 @@
 		EB0206091E18DA0B00D79DC2 /* DingTalkDylib */ = {
 			isa = PBXGroup;
 			children = (
+				EB0B1E881E305420007A15A7 /* View */,
+				EB0B1E781E305418007A15A7 /* Category */,
 				EB0206221E18DABF00D79DC2 /* Util */,
-				EB02061D1E18DA3C00D79DC2 /* GPS */,
+				EB0B1E8E1E305426007A15A7 /* GPS */,
 				EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */,
 				EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */,
 				EB02060A1E18DA0B00D79DC2 /* Package */,
@@ -153,23 +163,85 @@
 			name = lib;
 			sourceTree = "<group>";
 		};
-		EB02061D1E18DA3C00D79DC2 /* GPS */ = {
-			isa = PBXGroup;
-			children = (
-				EB3A98D01E1CBDA900FD269A /* GPSSetting */,
-				EB3A98CB1E1CBD8D00FD269A /* CLLocationManager+Util */,
-				EB02061E1E18DA7700D79DC2 /* DTGPSHook.h */,
-				EB02061F1E18DA7700D79DC2 /* DTGPSHook.m */,
-			);
-			path = GPS;
-			sourceTree = "<group>";
-		};
 		EB0206221E18DABF00D79DC2 /* Util */ = {
 			isa = PBXGroup;
 			children = (
 				EB2BEA0B1E1A0CDD00377579 /* JF_Helper */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		EB0B1E781E305418007A15A7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E791E305418007A15A7 /* CLLocationManager+Util */,
+				EB0B1E7C1E305418007A15A7 /* NSBundle+JFUtil */,
+				EB0B1E7F1E305418007A15A7 /* UIApplication+JFUtil */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EB0B1E791E305418007A15A7 /* CLLocationManager+Util */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E7A1E305418007A15A7 /* CLLocationManager+Util.h */,
+				EB0B1E7B1E305418007A15A7 /* CLLocationManager+Util.m */,
+			);
+			path = "CLLocationManager+Util";
+			sourceTree = "<group>";
+		};
+		EB0B1E7C1E305418007A15A7 /* NSBundle+JFUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E7D1E305418007A15A7 /* NSBundle+JFUtil.h */,
+				EB0B1E7E1E305418007A15A7 /* NSBundle+JFUtil.m */,
+			);
+			path = "NSBundle+JFUtil";
+			sourceTree = "<group>";
+		};
+		EB0B1E7F1E305418007A15A7 /* UIApplication+JFUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E801E305418007A15A7 /* UIApplication+JFUtil.h */,
+				EB0B1E811E305418007A15A7 /* UIApplication+JFUtil.m */,
+			);
+			path = "UIApplication+JFUtil";
+			sourceTree = "<group>";
+		};
+		EB0B1E881E305420007A15A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E891E305420007A15A7 /* DTGPSButton */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB0B1E891E305420007A15A7 /* DTGPSButton */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E8A1E305420007A15A7 /* DTGPSButton.h */,
+				EB0B1E8B1E305420007A15A7 /* DTGPSButton.m */,
+			);
+			path = DTGPSButton;
+			sourceTree = "<group>";
+		};
+		EB0B1E8E1E305426007A15A7 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E8F1E305426007A15A7 /* DTGPSHook.h */,
+				EB0B1E901E305426007A15A7 /* DTGPSHook.m */,
+				EB0B1E911E305426007A15A7 /* GPSSettingViewController */,
+			);
+			path = GPS;
+			sourceTree = "<group>";
+		};
+		EB0B1E911E305426007A15A7 /* GPSSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E921E305426007A15A7 /* DTGPSSettingViewController.h */,
+				EB0B1E931E305426007A15A7 /* DTGPSSettingViewController.m */,
+			);
+			path = GPSSettingViewController;
 			sourceTree = "<group>";
 		};
 		EB2BEA0B1E1A0CDD00377579 /* JF_Helper */ = {
@@ -181,34 +253,6 @@
 			path = JF_Helper;
 			sourceTree = "<group>";
 		};
-		EB3A98CB1E1CBD8D00FD269A /* CLLocationManager+Util */ = {
-			isa = PBXGroup;
-			children = (
-				EB3A98CC1E1CBD8D00FD269A /* CLLocationManager+Util.h */,
-				EB3A98CD1E1CBD8D00FD269A /* CLLocationManager+Util.m */,
-			);
-			path = "CLLocationManager+Util";
-			sourceTree = "<group>";
-		};
-		EB3A98D01E1CBDA900FD269A /* GPSSetting */ = {
-			isa = PBXGroup;
-			children = (
-				EB3A98DA1E1CC51E00FD269A /* DTGPSButton */,
-				EB3A98D11E1CBDE700FD269A /* DTGPSSettingViewController.h */,
-				EB3A98D21E1CBDE700FD269A /* DTGPSSettingViewController.m */,
-			);
-			path = GPSSetting;
-			sourceTree = "<group>";
-		};
-		EB3A98DA1E1CC51E00FD269A /* DTGPSButton */ = {
-			isa = PBXGroup;
-			children = (
-				EB3A98DB1E1CC53800FD269A /* DTGPSButton.h */,
-				EB3A98DC1E1CC53800FD269A /* DTGPSButton.m */,
-			);
-			path = DTGPSButton;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -216,12 +260,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0B1E861E305418007A15A7 /* UIApplication+JFUtil.h in Headers */,
+				EB0B1E961E305426007A15A7 /* DTGPSSettingViewController.h in Headers */,
+				EB0B1E821E305418007A15A7 /* CLLocationManager+Util.h in Headers */,
 				EB2BEA0E1E1A0CDD00377579 /* JF_Helper.h in Headers */,
-				EB3A98DD1E1CC53800FD269A /* DTGPSButton.h in Headers */,
-				EB3A98D31E1CBDE700FD269A /* DTGPSSettingViewController.h in Headers */,
-				EB0206201E18DA7700D79DC2 /* DTGPSHook.h in Headers */,
-				EB3A98CE1E1CBD8D00FD269A /* CLLocationManager+Util.h in Headers */,
 				EB0206121E18DA0B00D79DC2 /* DingTalkDylib.h in Headers */,
+				EB0B1E941E305426007A15A7 /* DTGPSHook.h in Headers */,
+				EB0B1E841E305418007A15A7 /* NSBundle+JFUtil.h in Headers */,
+				EB0B1E8C1E305420007A15A7 /* DTGPSButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +298,7 @@
 		EB0205F91E18DA0B00D79DC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				TargetAttributes = {
 					EB0206011E18DA0B00D79DC2 = {
 						CreatedOnToolsVersion = 8.1;
@@ -299,12 +345,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0B1E871E305418007A15A7 /* UIApplication+JFUtil.m in Sources */,
+				EB0B1E951E305426007A15A7 /* DTGPSHook.m in Sources */,
+				EB0B1E851E305418007A15A7 /* NSBundle+JFUtil.m in Sources */,
+				EB0B1E8D1E305420007A15A7 /* DTGPSButton.m in Sources */,
 				EB2BEA0F1E1A0CDD00377579 /* JF_Helper.m in Sources */,
-				EB3A98D41E1CBDE700FD269A /* DTGPSSettingViewController.m in Sources */,
-				EB3A98DE1E1CC53800FD269A /* DTGPSButton.m in Sources */,
+				EB0B1E831E305418007A15A7 /* CLLocationManager+Util.m in Sources */,
+				EB0B1E971E305426007A15A7 /* DTGPSSettingViewController.m in Sources */,
 				EB0206141E18DA0B00D79DC2 /* DingTalkDylib.m in Sources */,
-				EB0206211E18DA7700D79DC2 /* DTGPSHook.m in Sources */,
-				EB3A98CF1E1CBD8D00FD269A /* CLLocationManager+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +362,18 @@
 		EB0206181E18DA0B00D79DC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(iOSOpenDevPath)/frameworks/**",
@@ -322,18 +381,24 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
@@ -344,15 +409,30 @@
 		EB0206191E18DA0B00D79DC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(iOSOpenDevPath)/frameworks/**",
 					"$(SDKROOT)/System/Library/PrivateFrameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

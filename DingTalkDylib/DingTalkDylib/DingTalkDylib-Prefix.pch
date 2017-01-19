@@ -4,4 +4,10 @@
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
+
+// 签名证书的bundleIdentifier
+#define JFBundleIdentifier @"xx.xx.xx"
+// 被注入app自身的bundleIdentifier，此处设置的是钉钉的
+#define JFOrigBundleIdentifier @"com.laiwang.DingTalk"
+
 #endif
