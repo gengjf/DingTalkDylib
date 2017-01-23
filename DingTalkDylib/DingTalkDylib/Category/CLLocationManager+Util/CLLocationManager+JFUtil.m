@@ -1,18 +1,18 @@
 //
-//  CLLocationManager+Util.m
+//  CLLocationManager+JFUtil.m
 //  DingTalkDylib
 //
 //  Created by gengjf on 17/1/1.
 //
 //
 
-#import "CLLocationManager+Util.h"
+#import "CLLocationManager+JFUtil.h"
 
 #import "DTGPSHook.h"
 
 static NSMutableDictionary *jf_dictionaryAllClasses = nil;
 
-@implementation CLLocationManager (Util)
+@implementation CLLocationManager (JFUtil)
 
 + (void)load {
     

@@ -16,13 +16,13 @@
  *  替换实例方法
  *
  */
-+ (void)JFHookMethod:(Class)oldClass oldSEL:(SEL)oldSEL  newClass:(Class)newClass newSel:(SEL)newSel;
+void _jf_Hook_Method(Class originalClass, SEL originalSelector, Class swizzledClass, SEL swizzledSelector);
 
 /**
  *  替换类方法
  *
  */
-+ (void)JFHookClassMethod:(Class)oldClass oldSEL:(SEL)oldSEL  newClass:(Class)newClass newSel:(SEL)newSel;
+void _jf_Hook_Class_Method(Class originalClass, SEL originalSelector, Class swizzledClass, SEL swizzledSelector);
 
 void _jf_Swizzle(Class originalClass, SEL originalSelector, SEL swizzledSelector);
 

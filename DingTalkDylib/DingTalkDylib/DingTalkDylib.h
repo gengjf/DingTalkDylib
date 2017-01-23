@@ -10,12 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (DingTalkDylib)
-
-- (BOOL)jf_application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions;
-
-@end
-
 @interface DingTalkDylib : NSObject
 
 @end

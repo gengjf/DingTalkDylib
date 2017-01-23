@@ -13,27 +13,27 @@
 
 @implementation JF_Helper
 
-+ (void)JFHookMethod:(Class)oldClass oldSEL:(SEL)oldSEL  newClass:(Class)newClass newSel:(SEL)newSel {
+void _jf_Hook_Method(Class originalClass, SEL originalSelector, Class swizzledClass, SEL swizzledSelector) {
     
-    Method oldMethod = class_getInstanceMethod(oldClass, oldSEL);
+    Method originalMethod = class_getInstanceMethod(originalClass, originalSelector);
     
-    Method newMethod = class_getInstanceMethod(newClass, newSel);
+    Method swizzledMethod = class_getInstanceMethod(swizzledClass, swizzledSelector);
     
-    if(oldMethod && newMethod) {
+    if(originalMethod && swizzledMethod) {
         
-        method_exchangeImplementations(oldMethod, newMethod);
+        method_exchangeImplementations(originalMethod, swizzledMethod);
     }
 }
 
-+ (void)JFHookClassMethod:(Class)oldClass oldSEL:(SEL)oldSEL  newClass:(Class)newClass newSel:(SEL)newSel {
+void _jf_Hook_Class_Method(Class originalClass, SEL originalSelector, Class swizzledClass, SEL swizzledSelector) {
     
-    Method oldMethod = class_getClassMethod(oldClass, oldSEL);
+    Method originalMethod = class_getClassMethod(originalClass, originalSelector);
     
-    Method newMethod = class_getClassMethod(newClass, newSel);
+    Method swizzledMethod = class_getClassMethod(swizzledClass, swizzledSelector);
     
-    if(oldMethod && newMethod) {
+    if(originalMethod && swizzledMethod) {
         
-        method_exchangeImplementations(oldMethod, newMethod);
+        method_exchangeImplementations(originalMethod, swizzledMethod);
     }
 }
 

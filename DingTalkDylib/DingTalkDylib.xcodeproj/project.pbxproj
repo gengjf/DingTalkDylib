@@ -12,8 +12,8 @@
 		EB0206121E18DA0B00D79DC2 /* DingTalkDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */; };
 		EB0206141E18DA0B00D79DC2 /* DingTalkDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */; };
 		EB0206281E18E64F00D79DC2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0206271E18E64F00D79DC2 /* CoreLocation.framework */; };
-		EB0B1E821E305418007A15A7 /* CLLocationManager+Util.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E7A1E305418007A15A7 /* CLLocationManager+Util.h */; };
-		EB0B1E831E305418007A15A7 /* CLLocationManager+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E7B1E305418007A15A7 /* CLLocationManager+Util.m */; };
+		EB0B1E821E305418007A15A7 /* CLLocationManager+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E7A1E305418007A15A7 /* CLLocationManager+JFUtil.h */; };
+		EB0B1E831E305418007A15A7 /* CLLocationManager+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E7B1E305418007A15A7 /* CLLocationManager+JFUtil.m */; };
 		EB0B1E841E305418007A15A7 /* NSBundle+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E7D1E305418007A15A7 /* NSBundle+JFUtil.h */; };
 		EB0B1E851E305418007A15A7 /* NSBundle+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E7E1E305418007A15A7 /* NSBundle+JFUtil.m */; };
 		EB0B1E861E305418007A15A7 /* UIApplication+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E801E305418007A15A7 /* UIApplication+JFUtil.h */; };
@@ -28,6 +28,8 @@
 		EB2BEA0F1E1A0CDD00377579 /* JF_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEA0D1E1A0CDD00377579 /* JF_Helper.m */; };
 		EB2BEA111E1A0E1E00377579 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2BEA101E1A0E1E00377579 /* CoreGraphics.framework */; };
 		EB3A98E01E1CC82200FD269A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A98DF1E1CC82200FD269A /* MapKit.framework */; };
+		EB6CDFBF1E34B1390080F13F /* UIResponder+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6CDFBD1E34B1390080F13F /* UIResponder+JFUtil.h */; };
+		EB6CDFC01E34B1390080F13F /* UIResponder+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6CDFBE1E34B1390080F13F /* UIResponder+JFUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,13 +39,12 @@
 		EB02060C1E18DA0B00D79DC2 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		EB02060D1E18DA0B00D79DC2 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		EB02060F1E18DA0B00D79DC2 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
-		EB0206101E18DA0B00D79DC2 /* DingTalkDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DingTalkDylib-Prefix.pch"; sourceTree = "<group>"; };
 		EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingTalkDylib.h; sourceTree = "<group>"; };
 		EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingTalkDylib.m; sourceTree = "<group>"; };
 		EB0206171E18DA0B00D79DC2 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
 		EB0206271E18E64F00D79DC2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		EB0B1E7A1E305418007A15A7 /* CLLocationManager+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+Util.h"; sourceTree = "<group>"; };
-		EB0B1E7B1E305418007A15A7 /* CLLocationManager+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+Util.m"; sourceTree = "<group>"; };
+		EB0B1E7A1E305418007A15A7 /* CLLocationManager+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+JFUtil.h"; sourceTree = "<group>"; };
+		EB0B1E7B1E305418007A15A7 /* CLLocationManager+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+JFUtil.m"; sourceTree = "<group>"; };
 		EB0B1E7D1E305418007A15A7 /* NSBundle+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+JFUtil.h"; sourceTree = "<group>"; };
 		EB0B1E7E1E305418007A15A7 /* NSBundle+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+JFUtil.m"; sourceTree = "<group>"; };
 		EB0B1E801E305418007A15A7 /* UIApplication+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JFUtil.h"; sourceTree = "<group>"; };
@@ -58,6 +59,8 @@
 		EB2BEA0D1E1A0CDD00377579 /* JF_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JF_Helper.m; sourceTree = "<group>"; };
 		EB2BEA101E1A0E1E00377579 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EB3A98DF1E1CC82200FD269A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EB6CDFBD1E34B1390080F13F /* UIResponder+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+JFUtil.h"; sourceTree = "<group>"; };
+		EB6CDFBE1E34B1390080F13F /* UIResponder+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+JFUtil.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				EB02060F1E18DA0B00D79DC2 /* PackageVersion.plist */,
-				EB0206101E18DA0B00D79DC2 /* DingTalkDylib-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,6 +176,7 @@
 		EB0B1E781E305418007A15A7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				EB6CDFBC1E34B1230080F13F /* UIResponder+JFUtil */,
 				EB0B1E791E305418007A15A7 /* CLLocationManager+Util */,
 				EB0B1E7C1E305418007A15A7 /* NSBundle+JFUtil */,
 				EB0B1E7F1E305418007A15A7 /* UIApplication+JFUtil */,
@@ -184,8 +187,8 @@
 		EB0B1E791E305418007A15A7 /* CLLocationManager+Util */ = {
 			isa = PBXGroup;
 			children = (
-				EB0B1E7A1E305418007A15A7 /* CLLocationManager+Util.h */,
-				EB0B1E7B1E305418007A15A7 /* CLLocationManager+Util.m */,
+				EB0B1E7A1E305418007A15A7 /* CLLocationManager+JFUtil.h */,
+				EB0B1E7B1E305418007A15A7 /* CLLocationManager+JFUtil.m */,
 			);
 			path = "CLLocationManager+Util";
 			sourceTree = "<group>";
@@ -253,6 +256,15 @@
 			path = JF_Helper;
 			sourceTree = "<group>";
 		};
+		EB6CDFBC1E34B1230080F13F /* UIResponder+JFUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EB6CDFBD1E34B1390080F13F /* UIResponder+JFUtil.h */,
+				EB6CDFBE1E34B1390080F13F /* UIResponder+JFUtil.m */,
+			);
+			path = "UIResponder+JFUtil";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -262,7 +274,8 @@
 			files = (
 				EB0B1E861E305418007A15A7 /* UIApplication+JFUtil.h in Headers */,
 				EB0B1E961E305426007A15A7 /* DTGPSSettingViewController.h in Headers */,
-				EB0B1E821E305418007A15A7 /* CLLocationManager+Util.h in Headers */,
+				EB6CDFBF1E34B1390080F13F /* UIResponder+JFUtil.h in Headers */,
+				EB0B1E821E305418007A15A7 /* CLLocationManager+JFUtil.h in Headers */,
 				EB2BEA0E1E1A0CDD00377579 /* JF_Helper.h in Headers */,
 				EB0206121E18DA0B00D79DC2 /* DingTalkDylib.h in Headers */,
 				EB0B1E941E305426007A15A7 /* DTGPSHook.h in Headers */,
@@ -345,12 +358,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6CDFC01E34B1390080F13F /* UIResponder+JFUtil.m in Sources */,
 				EB0B1E871E305418007A15A7 /* UIApplication+JFUtil.m in Sources */,
 				EB0B1E951E305426007A15A7 /* DTGPSHook.m in Sources */,
 				EB0B1E851E305418007A15A7 /* NSBundle+JFUtil.m in Sources */,
 				EB0B1E8D1E305420007A15A7 /* DTGPSButton.m in Sources */,
 				EB2BEA0F1E1A0CDD00377579 /* JF_Helper.m in Sources */,
-				EB0B1E831E305418007A15A7 /* CLLocationManager+Util.m in Sources */,
+				EB0B1E831E305418007A15A7 /* CLLocationManager+JFUtil.m in Sources */,
 				EB0B1E971E305426007A15A7 /* DTGPSSettingViewController.m in Sources */,
 				EB0206141E18DA0B00D79DC2 /* DingTalkDylib.m in Sources */,
 			);
@@ -454,11 +468,15 @@
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DingTalkDylib/DingTalkDylib-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INSTALL_PATH = /usr/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/iOSOpenDev/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -482,11 +500,15 @@
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DingTalkDylib/DingTalkDylib-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INSTALL_PATH = /usr/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/iOSOpenDev/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

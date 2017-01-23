@@ -14,6 +14,4 @@
 
 + (void)hook_didUpdateLocations:(Class)cl;
 
-+ (void)startGPSHook;
-
 @end

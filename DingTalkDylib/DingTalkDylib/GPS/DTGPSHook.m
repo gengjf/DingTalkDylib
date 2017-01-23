@@ -11,6 +11,7 @@
 #import <objc/message.h>
 #import <CoreLocation/CoreLocation.h>
 #import "JF_Helper.h"
+#import "CLLocationManager+JFUtil.h"
 
 static NSMutableDictionary *jf_dictionaryAllClasses = nil;
 
@@ -168,7 +169,7 @@ static NSMutableDictionary *jf_dictionaryAllClasses = nil;
     
     Class locationManager = NSClassFromString(@"CLLocationManager");
     
-    [JF_Helper JFHookMethod:locationManager oldSEL:@selector(setDelegate:) newClass:locationManager newSel:@selector(jf_setDelegate:)];
+    _jf_Hook_Method(locationManager, @selector(setDelegate:), locationManager, @selector(jf_setDelegate:));
 }
 
 @end
