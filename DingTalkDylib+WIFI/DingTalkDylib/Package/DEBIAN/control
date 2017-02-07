@@ -1,0 +1,17 @@
+Package: com.gengjf.DingTalkDylib
+Name: DingTalkDylib
+Version: 1.0-1
+Description: 
+Section: System
+Depends: firmware (>= 5.0)
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: gengjf
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+
