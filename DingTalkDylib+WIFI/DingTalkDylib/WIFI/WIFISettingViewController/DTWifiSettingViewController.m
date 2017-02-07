@@ -149,11 +149,7 @@ NSString *const wifiCell = @"wifiCell";
             
             [_currentWifi addObject:wifi];
         }
-        
-        CFRelease(info);
     }
-    
-    CFRelease(arrayRef);
 }
 
 - (SCNetworkReachabilityFlags)fetchCurrentNetworkStatus {
