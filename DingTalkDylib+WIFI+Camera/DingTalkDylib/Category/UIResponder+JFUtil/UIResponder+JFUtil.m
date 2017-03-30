@@ -21,8 +21,6 @@
         Class bundle = [NSBundle class];
         
         _jf_Hook_Method(bundle, @selector(bundleIdentifier), bundle, @selector(jf_bundleIdentifier));
-        
-        _jf_Hook_Method(bundle, @selector(infoDictionary), bundle, @selector(jf_infoDictionary));
     });
     
     // 执行原方法

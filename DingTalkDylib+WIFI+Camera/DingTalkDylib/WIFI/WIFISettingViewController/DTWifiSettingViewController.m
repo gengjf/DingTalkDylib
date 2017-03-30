@@ -15,7 +15,6 @@
 #import "DTWifiSettingSession.h"
 #import "DTWIFIHook.h"
 #import "JF_Helper.h"
-#import "DTGPSButton.h"
 
 #define JF_TITLE_CURRENT_WIFI @"当前wifi"
 #define JF_TITLE_HISTORY_WIFI @"历史wifi"
@@ -68,20 +67,6 @@ NSString *const wifiCell = @"wifiCell";
     [self.tableView setSectionIndexBackgroundColor:[UIColor clearColor]];
     [self.tableView setSectionIndexColor:[UIColor blueColor]];
     [self.tableView registerClass:[DTWifiHeaderView class] forHeaderFooterViewReuseIdentifier:wifiHeaderView];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
-    
-    [DTGPSButton sharedInstance].hidden = YES;
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    
-    [super viewDidDisappear:animated];
-    
-    [DTGPSButton sharedInstance].hidden = NO;
 }
 
 - (void)settingRightBarButtonItems {

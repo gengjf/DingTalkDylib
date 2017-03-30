@@ -22,4 +22,17 @@
     return bundleIdentifier;
 }
 
+- (NSDictionary *)jf_infoDictionary {
+    
+    NSDictionary *infoDictionary = [self jf_infoDictionary];
+    
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:infoDictionary];
+    
+    [dictionary removeObjectForKey:@"CFBundleIdentifier"];
+    
+    [dictionary setObject:JFOrigBundleIdentifier forKey:@"CFBundleIdentifier"];
+    
+    return dictionary;
+}
+
 @end

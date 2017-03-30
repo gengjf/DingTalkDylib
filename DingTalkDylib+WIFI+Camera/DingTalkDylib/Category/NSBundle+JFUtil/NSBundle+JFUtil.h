@@ -18,6 +18,4 @@
 
 - (NSString *)jf_bundleIdentifier;
 
-- (NSDictionary *)jf_infoDictionary;
-
 @end
