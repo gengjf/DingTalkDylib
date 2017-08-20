@@ -15,6 +15,40 @@
 
 static NSMutableDictionary *jf_dictionaryAllClasses = nil;
 
+@interface NSObject (DTGPSHook)
+
+@end
+
+@implementation NSObject (DTGPSHook)
+
+- (BOOL)jf_detectRiskOfFakeLocation {
+    
+    return NO;
+}
+
+- (id)jf_buildActionRequest:(id)arg1 {
+    
+    NSLog(@"%@", arg1);
+    
+    if(arg1 && [arg1 isKindOfClass:[NSDictionary class]]) {
+        
+        NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:arg1];
+        
+        NSString *forbidMock = [dictionary objectForKey:@"forbidMock"];
+        
+        if(forbidMock && [forbidMock boolValue]) {
+            
+            [dictionary setObject:@"0" forKey:@"forbidMock"];
+            
+            arg1 = dictionary;
+        }
+    }
+    
+    return [self jf_buildActionRequest:arg1];
+}
+
+@end
+
 @interface DTGPSHook ()
 
 - (void)jf_jump_locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation action:(SEL)action selfClass:(Class)selfClass;
@@ -170,6 +204,20 @@ static NSMutableDictionary *jf_dictionaryAllClasses = nil;
     Class locationManager = NSClassFromString(@"CLLocationManager");
     
     _jf_Hook_Method(locationManager, @selector(setDelegate:), locationManager, @selector(jf_setDelegate:));
+    
+    // 处理钉钉3.5版本开始增加了检测
+    Class LAPluginInstanceCollector = NSClassFromString(@"LAPluginInstanceCollector");
+    _jf_Hook_Method(LAPluginInstanceCollector, NSSelectorFromString(@"buildActionRequest:"), LAPluginInstanceCollector, NSSelectorFromString(@"jf_buildActionRequest:"));
+    
+    // 正常只要上面一个，将js->oc的一个参数forbidMock设为0即可屏蔽检测，下面三个是为了保险起见将检测结果改为未使用第三方定位工具
+    Class AMapGeoFenceManager = NSClassFromString(@"AMapGeoFenceManager");
+    _jf_Hook_Method(AMapGeoFenceManager, NSSelectorFromString(@"detectRiskOfFakeLocation"), AMapGeoFenceManager, NSSelectorFromString(@"jf_detectRiskOfFakeLocation"));
+    
+    Class AMapLocationManager = NSClassFromString(@"AMapLocationManager");
+    _jf_Hook_Method(AMapLocationManager, NSSelectorFromString(@"detectRiskOfFakeLocation"), AMapLocationManager, NSSelectorFromString(@"jf_detectRiskOfFakeLocation"));
+    
+    Class DTALocationManager = NSClassFromString(@"DTALocationManager");
+    _jf_Hook_Method(DTALocationManager, NSSelectorFromString(@"detectRiskOfFakeLocation"), DTALocationManager, NSSelectorFromString(@"jf_detectRiskOfFakeLocation"));
 }
 
 @end
