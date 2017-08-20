@@ -12,4 +12,6 @@
 
 - (void)jf_setDelegate:(id<CLLocationManagerDelegate>)delegate;
 
+- (BOOL)detectRiskOfFakeLocation;
+
 @end
