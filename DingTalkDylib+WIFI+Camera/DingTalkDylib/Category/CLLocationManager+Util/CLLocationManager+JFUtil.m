@@ -19,6 +19,11 @@ static NSMutableDictionary *jf_dictionaryAllClasses = nil;
     jf_dictionaryAllClasses = [[NSMutableDictionary alloc] init];
 }
 
+- (BOOL)detectRiskOfFakeLocation {
+    
+    return NO;
+}
+
 - (void)jf_setDelegate:(id<CLLocationManagerDelegate>)delegate {
     
     if(delegate) {
